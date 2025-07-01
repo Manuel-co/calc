@@ -1,230 +1,709 @@
-# 🧮 Responsive Tip Calculator
+# Tip Calculator - Complete Code Documentation
 
-A beautiful, fully responsive tip calculator built with vanilla HTML, CSS, and JavaScript. Perfect for splitting bills and calculating tips across all devices - from mobile phones to ultra-wide desktop monitors.
+This document explains every line of code in the tip calculator app, making it perfect for beginners to understand how everything works.
 
-![Tip Calculator Preview](https://hebbkx1anhila5yf.public.blob.vercel-storage.com/desktop.jpg-Vyrs1yVNQH3GF24yarvjUpaK9Hhess.jpeg)
-
-## ✨ Features
-
-### 💰 Core Functionality
-- **Bill Input**: Enter any bill amount with decimal precision
-- **Flexible Tip Selection**: Choose from preset percentages (5%, 10%, 15%, 25%, 50%) or enter custom amounts
-- **People Counter**: Split bills among any number of people with intuitive +/- controls
-- **Real-time Calculations**: Instant updates as you type or change values
-- **Smart Reset**: One-click reset with automatic focus management
-
-### 📱 Responsive Design
-- **Mobile-First**: Optimized for touch interfaces and small screens
-- **Tablet-Friendly**: Perfect layout for medium-sized devices
-- **Desktop-Ready**: Full-featured experience on large screens
-- **Ultra-Wide Support**: Scales beautifully on 4K and ultra-wide monitors
-- **Landscape Mode**: Special optimizations for mobile landscape orientation
-
-### ♿ Accessibility & UX
-- **Keyboard Navigation**: Full keyboard support with arrow keys and shortcuts
-- **Screen Reader Friendly**: Proper ARIA labels and live regions
-- **Touch Optimized**: Enhanced touch interactions for mobile devices
-- **Visual Feedback**: Smooth animations and hover states
-- **Error Handling**: Real-time input validation with helpful error messages
-- **Focus Management**: Logical tab order and visible focus indicators
-
-### 🎨 Modern Design
-- **Clean Interface**: Minimalist design inspired by modern fintech apps
-- **Consistent Theming**: CSS custom properties for maintainable styling
-- **Smooth Animations**: Subtle transitions and micro-interactions
-- **High DPI Ready**: Crisp visuals on retina and high-DPI displays
-- **Print Friendly**: Optimized styles for printing receipts
-
-## 📁 Project Structure
-
-```
-tip-calculator/
-├── index.html              # Main HTML structure with semantic markup
-├── styles.css              # Comprehensive CSS with responsive design
-├── script.js               # Enhanced JavaScript with modern features
-├── README.md               # This documentation
-└── DOCUMENTATION.md        # Detailed code explanation for beginners
-```
-
-## 🚀 Quick Start
-
-### Installation
-1. **Download**: Save all files in the same folder
-2. **Open**: Double-click `index.html` or open with any modern browser
-3. **Use**: Start calculating tips immediately!
-
-### No Build Process Required
-- Pure vanilla technologies - no compilation needed
-- Works offline once loaded
-- No external dependencies or CDNs
-
-## 📱 Device Support
-
-### Mobile Devices (320px - 768px)
-- **Portrait Mode**: Single-column layout with optimized touch targets
-- **Landscape Mode**: Compact two-column layout for better space usage
-- **Touch Interactions**: Enhanced button feedback and gesture support
-- **Keyboard Handling**: Smart virtual keyboard management
-
-### Tablets (769px - 1024px)
-- **Balanced Layout**: Two-column design with optimal spacing
-- **Touch & Mouse**: Hybrid interaction support
-- **Readable Text**: Appropriately scaled typography
-
-### Desktop (1025px+)
-- **Full Layout**: Side-by-side input and results sections
-- **Keyboard Shortcuts**: Power-user features like Ctrl+R to reset
-- **Hover Effects**: Rich interactive feedback
-- **Large Displays**: Scales up to 4K and ultra-wide monitors
-
-## 🎯 Browser Compatibility
-
-### Fully Supported
-- **Chrome 60+** (including mobile)
-- **Firefox 55+** (including mobile)
-- **Safari 12+** (including iOS)
-- **Edge 79+**
-
-### Graceful Degradation
-- Older browsers receive basic functionality
-- Progressive enhancement for modern features
-- No JavaScript errors on unsupported browsers
-
-## ⌨️ Keyboard Shortcuts
-
-| Shortcut | Action |
-|----------|--------|
-| `1-5` | Select tip percentage (5%, 10%, 15%, 25%, 50%) |
-| `Tab` | Navigate between inputs |
-| `Arrow Keys` | Navigate tip buttons |
-| `Enter/Space` | Activate focused button |
-| `Ctrl/Cmd + R` | Reset calculator |
-
-## 🎨 Customization
-
-### CSS Custom Properties
-The app uses CSS custom properties for easy theming:
-
-```css
-:root {
-    --primary-color: #26c0ab;      /* Teal accent color */
-    --primary-dark: #00494d;       /* Dark green */
-    --background-color: #c5e4e7;   /* Light mint background */
-    --input-background: #f4fafa;   /* Input field background */
-    /* ... more variables */
-}
-```
-
-### Responsive Breakpoints
-- **Small Mobile**: 320px - 480px
-- **Medium Mobile**: 481px - 768px
-- **Tablet**: 769px - 1024px
-- **Desktop**: 1025px - 1440px
-- **Large Desktop**: 1441px+
-
-## 🔧 Technical Features
-
-### Performance Optimizations
-- **Debounced Calculations**: Prevents excessive recalculations during typing
-- **Efficient DOM Updates**: Minimal reflows and repaints
-- **CSS Containment**: Optimized rendering performance
-- **Lazy Loading**: Deferred non-critical JavaScript execution
-
-### Modern JavaScript Features
-- **ES6+ Classes**: Clean, maintainable code structure
-- **Arrow Functions**: Concise syntax with proper `this` binding
-- **Template Literals**: Dynamic string generation
-- **Destructuring**: Clean variable assignments
-- **Async/Await Ready**: Prepared for future API integrations
-
-### CSS Architecture
-- **Mobile-First**: Progressive enhancement approach
-- **CSS Grid & Flexbox**: Modern layout techniques
-- **Custom Properties**: Maintainable theming system
-- **Container Queries Ready**: Future-proof responsive design
-
-## 🧪 Testing Scenarios
-
-### Functionality Tests
-- [ ] Calculate tips with various percentages
-- [ ] Split bills among different numbers of people
-- [ ] Handle edge cases (zero values, large numbers)
-- [ ] Validate input restrictions
-- [ ] Test reset functionality
-
-### Responsive Tests
-- [ ] Test on actual mobile devices
-- [ ] Verify tablet landscape/portrait modes
-- [ ] Check desktop scaling at different zoom levels
-- [ ] Test ultra-wide monitor compatibility
-- [ ] Validate print layout
-
-### Accessibility Tests
-- [ ] Navigate using only keyboard
-- [ ] Test with screen readers
-- [ ] Verify color contrast ratios
-- [ ] Check focus indicators
-- [ ] Validate ARIA labels
-
-## 🎓 Learning Opportunities
-
-This project demonstrates:
-
-### HTML5 Concepts
-- Semantic markup and accessibility
-- Form elements and validation
-- ARIA attributes and roles
-- Progressive enhancement
-
-### CSS3 Techniques
-- CSS Grid and Flexbox layouts
-- Custom properties (CSS variables)
-- Media queries and responsive design
-- Animations and transitions
-- Modern pseudo-selectors
-
-### JavaScript Skills
-- ES6+ class syntax and modules
-- DOM manipulation and event handling
-- Input validation and error handling
-- Debouncing and performance optimization
-- Touch and keyboard event management
-
-## 🤝 Contributing
-
-Perfect for learning and experimentation! Try adding:
-
-### Beginner Enhancements
-- Different currency symbols
-- Tip calculation history
-- Dark mode toggle
-- Sound effects for interactions
-
-### Intermediate Features
-- Bill splitting with different amounts per person
-- Tax calculation options
-- Export calculations to PDF
-- Local storage for preferences
-
-### Advanced Additions
-- PWA (Progressive Web App) features
-- Offline functionality with Service Workers
-- Multi-language support (i18n)
-- Integration with payment APIs
-
-## 📄 License
-
-Open source under the MIT License. Feel free to use, modify, and distribute!
-
-## 🙏 Acknowledgments
-
-- Design inspired by modern fintech applications
-- Accessibility guidelines from WCAG 2.1
-- Performance best practices from web.dev
-- Responsive design patterns from modern CSS techniques
+## Table of Contents
+1. [HTML Structure (index.html)](#html-structure)
+2. [CSS Styling (styles.css)](#css-styling)
+3. [JavaScript Functionality (script.js)](#javascript-functionality)
 
 ---
 
-**Built with ❤️ using vanilla web technologies**
+## HTML Structure (index.html)
 
-*No frameworks, no build tools, no complexity - just clean, modern web development.*# calc
+### Document Setup
+\`\`\`html
+&lt;!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+\`\`\`
+
+**Line by line explanation:**
+- \`<!DOCTYPE html>\`: Tells the browser this is an HTML5 document
+- \`<html lang="en">\`: Root element with English language attribute
+- \`<meta charset="UTF-8">\`: Sets character encoding to UTF-8 (supports all characters)
+- \`<meta name="viewport"...>\`: Makes the page responsive on mobile devices
+- \`<title>\`: Sets the browser tab title
+- \`<link rel="stylesheet"...>\`: Links our CSS file for styling
+
+### Main Container Structure
+\`\`\`html
+<body>
+    <div class="container">
+        &lt;!-- Logo -->
+        <div class="logo">
+            <h1>SPLI<br>TTER</h1>
+        </div>
+\`\`\`
+
+**Explanation:**
+- \`<body>\`: Contains all visible content
+- \`<div class="container">\`: Main wrapper that centers everything on the page
+- \`<div class="logo">\`: Container for the app logo
+- \`<h1>SPLI<br>TTER</h1>\`: App title with line break for styling
+
+### Calculator Card Structure
+\`\`\`html
+<div class="calculator-card">
+    <div class="calculator-grid">
+        &lt;!-- Left Side - Input Section -->
+        <div class="input-section">
+\`\`\`
+
+**Explanation:**
+- \`calculator-card\`: White card container with rounded corners and shadow
+- \`calculator-grid\`: Uses CSS Grid to create two-column layout
+- \`input-section\`: Left side containing all input fields
+
+### Bill Input Section
+\`\`\`html
+<div class="input-group">
+    <label for="bill-input">Bill</label>
+    <div class="input-wrapper">
+        <span class="dollar-sign">$</span>
+        <input type="number" id="bill-input" placeholder="0" step="0.01">
+    </div>
+</div>
+\`\`\`
+
+**Explanation:**
+- \`input-group\`: Container for each input section
+- \`<label for="bill-input">\`: Label that connects to the input field
+- \`input-wrapper\`: Positions the dollar sign and input field
+- \`dollar-sign\`: Dollar symbol positioned inside the input
+- \`<input type="number"...>\`: Number input for bill amount
+  - \`id="bill-input"\`: Unique identifier for JavaScript
+  - \`placeholder="0"\`: Shows "0" when empty
+  - \`step="0.01"\`: Allows decimal values (cents)
+
+### Tip Selection Buttons
+\`\`\`html
+<div class="input-group">
+    <label>Select Tip %</label>
+    <div class="tip-buttons">
+        <button class="tip-btn" data-tip="5">5%</button>
+        <button class="tip-btn" data-tip="10">10%</button>
+        <button class="tip-btn" data-tip="15">15%</button>
+        <button class="tip-btn" data-tip="25">25%</button>
+        <button class="tip-btn" data-tip="50">50%</button>
+        <input type="number" id="custom-tip" placeholder="Custom" step="0.01">
+    </div>
+</div>
+\`\`\`
+
+**Explanation:**
+- \`tip-buttons\`: Grid container for tip percentage buttons
+- \`<button class="tip-btn" data-tip="5">\`: Tip button
+  - \`data-tip="5"\`: Custom attribute storing the tip percentage value
+  - JavaScript uses this to know which percentage was clicked
+- \`#custom-tip\`: Input field for custom tip percentages
+
+### People Counter Section
+\`\`\`html
+<div class="input-group">
+    <label for="people-input">Number of People</label>
+    <div class="input-wrapper people-wrapper">
+        <span class="person-icon">👤</span>
+        <input type="number" id="people-input" value="1" min="1">
+        <div class="people-controls">
+            <button id="people-up">+</button>
+            <button id="people-down">-</button>
+        </div>
+    </div>
+</div>
+\`\`\`
+
+**Explanation:**
+- \`person-icon\`: Person emoji icon inside the input
+- \`value="1"\`: Default value of 1 person
+- \`min="1"\`: Minimum value (can't have less than 1 person)
+- \`people-controls\`: Container for +/- buttons
+- \`people-up\` and \`people-down\`: Buttons to increment/decrement people count
+
+### Results Section
+\`\`\`html
+<div class="results-section">
+    <div class="results-content">
+        &lt;!-- Tip Amount -->
+        <div class="result-item">
+            <div class="result-label">
+                <div class="label-text">Tip Amount</div>
+                <div class="label-subtext">/ person</div>
+            </div>
+            <div class="result-value" id="tip-amount">$0.00</div>
+        </div>
+
+        &lt;!-- Total -->
+        <div class="result-item">
+            <div class="result-label">
+                <div class="label-text">Total</div>
+                <div class="label-subtext">/ person</div>
+            </div>
+            <div class="result-value" id="total-amount">$0.00</div>
+        </div>
+    </div>
+
+    &lt;!-- Reset Button -->
+    <button id="reset-btn" class="reset-button">RESET</button>
+</div>
+\`\`\`
+
+**Explanation:**
+- \`results-section\`: Dark green container for displaying results
+- \`result-item\`: Container for each result (tip amount and total)
+- \`result-label\`: Contains the label text and subtext
+- \`result-value\`: Large text showing the calculated amount
+- \`id="tip-amount"\` and \`id="total-amount"\`: JavaScript updates these elements
+- \`reset-btn\`: Button to clear all inputs and reset the calculator
+
+---
+
+## CSS Styling (styles.css)
+
+### Global Reset and Base Styles
+\`\`\`css
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+\`\`\`
+
+**Explanation:**
+- \`*\`: Selects all elements
+- \`margin: 0; padding: 0;\`: Removes default spacing from all elements
+- \`box-sizing: border-box;\`: Makes padding and border included in element's total width/height
+
+### Body Styling
+\`\`\`css
+body {
+    font-family: 'Space Mono', monospace, Arial, sans-serif;
+    background-color: #c5e4e7;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+\`\`\`
+
+**Explanation:**
+- \`font-family\`: Sets the font (Space Mono preferred, fallback to monospace, then Arial)
+- \`background-color: #c5e4e7\`: Light mint green background
+- \`min-height: 100vh\`: Minimum height of full viewport height
+- \`display: flex\`: Makes body a flex container
+- \`align-items: center\`: Centers content vertically
+- \`justify-content: center\`: Centers content horizontally
+- \`padding: 20px\`: Adds space around the edges
+
+### Container and Logo
+\`\`\`css
+.container {
+    width: 100%;
+    max-width: 920px;
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.logo h1 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #00494d;
+    letter-spacing: 0.3em;
+    line-height: 1.2;
+}
+\`\`\`
+
+**Explanation:**
+- \`.container\`: Main wrapper with maximum width
+- \`.logo\`: Centers the logo text
+- \`font-size: 24px\`: Size of the logo text
+- \`font-weight: 700\`: Bold text
+- \`color: #00494d\`: Dark green color
+- \`letter-spacing: 0.3em\`: Adds space between letters
+- \`line-height: 1.2\`: Controls spacing between lines
+
+### Calculator Card
+\`\`\`css
+.calculator-card {
+    background: white;
+    border-radius: 25px;
+    padding: 32px;
+    box-shadow: 0 32px 43px rgba(79, 166, 175, 0.2);
+}
+
+.calculator-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+}
+\`\`\`
+
+**Explanation:**
+- \`background: white\`: White background for the card
+- \`border-radius: 25px\`: Rounded corners
+- \`padding: 32px\`: Internal spacing
+- \`box-shadow\`: Adds shadow effect (x-offset, y-offset, blur, color with transparency)
+- \`display: grid\`: Creates a grid layout
+- \`grid-template-columns: 1fr 1fr\`: Two equal columns
+- \`gap: 48px\`: Space between grid items
+
+### Input Styling
+\`\`\`css
+.input-wrapper input {
+    width: 100%;
+    height: 48px;
+    padding: 0 17px;
+    padding-left: 50px;
+    font-size: 24px;
+    font-weight: 700;
+    background-color: #f4fafa;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    color: #00494d;
+    text-align: right;
+    outline: none;
+}
+\`\`\`
+
+**Explanation:**
+- \`width: 100%\`: Full width of container
+- \`height: 48px\`: Fixed height
+- \`padding-left: 50px\`: Space for the dollar sign icon
+- \`font-size: 24px\`: Large, readable text
+- \`background-color: #f4fafa\`: Very light mint background
+- \`border: 2px solid transparent\`: Invisible border (for focus state)
+- \`text-align: right\`: Numbers align to the right
+- \`outline: none\`: Removes default browser outline
+
+### Focus States
+\`\`\`css
+.input-wrapper input:focus {
+    border-color: #26c0ab;
+}
+\`\`\`
+
+**Explanation:**
+- \`:focus\`: Applies when user clicks/tabs to the input
+- \`border-color: #26c0ab\`: Teal border when focused
+
+### Tip Buttons
+\`\`\`css
+.tip-btn {
+    background-color: #00494d;
+    color: white;
+    border: none;
+}
+
+.tip-btn:hover {
+    background-color: #26c0ab;
+    color: #00494d;
+}
+
+.tip-btn.active {
+    background-color: #26c0ab;
+    color: #00494d;
+}
+\`\`\`
+
+**Explanation:**
+- Default state: Dark green background, white text
+- \`:hover\`: Changes color when mouse hovers over button
+- \`.active\`: Style when button is selected (JavaScript adds this class)
+
+### Results Section
+\`\`\`css
+.results-section {
+    background-color: #00494d;
+    border-radius: 15px;
+    padding: 40px 24px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 257px;
+}
+\`\`\`
+
+**Explanation:**
+- \`background-color: #00494d\`: Dark green background
+- \`display: flex\`: Flexbox layout
+- \`flex-direction: column\`: Stack items vertically
+- \`justify-content: space-between\`: Spreads items apart
+- \`min-height: 257px\`: Minimum height to maintain proportions
+
+### Result Values
+\`\`\`css
+.result-value {
+    color: #26c0ab;
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+\`\`\`
+
+**Explanation:**
+- \`color: #26c0ab\`: Bright teal color
+- \`font-size: 48px\`: Large text for emphasis
+- \`letter-spacing: -1px\`: Slightly tighter letter spacing
+
+### Responsive Design
+\`\`\`css
+@media (max-width: 768px) {
+    .calculator-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+}
+\`\`\`
+
+**Explanation:**
+- \`@media (max-width: 768px)\`: Applies styles only on screens smaller than 768px
+- \`grid-template-columns: 1fr\`: Changes to single column layout on mobile
+- This makes the app stack vertically on smaller screens
+
+---
+
+## JavaScript Functionality (script.js)
+
+### Class Definition
+\`\`\`javascript
+class TipCalculator {
+    constructor() {
+        // Get references to HTML elements
+        this.billInput = document.getElementById('bill-input');
+        this.customTipInput = document.getElementById('custom-tip');
+        this.peopleInput = document.getElementById('people-input');
+        this.tipButtons = document.querySelectorAll('.tip-btn');
+        this.peopleUpBtn = document.getElementById('people-up');
+        this.peopleDownBtn = document.getElementById('people-down');
+        this.resetBtn = document.getElementById('reset-btn');
+        this.tipAmountDisplay = document.getElementById('tip-amount');
+        this.totalAmountDisplay = document.getElementById('total-amount');
+
+        // Initialize state variables
+        this.selectedTipPercent = null;
+        this.customTipPercent = null;
+
+        // Start the app
+        this.init();
+    }
+\`\`\`
+
+**Explanation:**
+- \`class TipCalculator\`: Creates a class to organize our code
+- \`constructor()\`: Runs when we create a new TipCalculator
+- \`document.getElementById()\`: Gets HTML elements by their ID
+- \`document.querySelectorAll()\`: Gets all elements with the specified class
+- \`this.selectedTipPercent = null\`: Stores which tip button is selected
+- \`this.customTipPercent = null\`: Stores custom tip percentage
+- \`this.init()\`: Calls the initialization method
+
+### Event Listeners Setup
+\`\`\`javascript
+init() {
+    // Add event listeners
+    this.billInput.addEventListener('input', () => this.calculate());
+    this.customTipInput.addEventListener('input', () => this.handleCustomTip());
+    this.peopleInput.addEventListener('input', () => this.calculate());
+    
+    this.tipButtons.forEach(btn => {
+        btn.addEventListener('click', (e) => this.handleTipSelection(e));
+    });
+
+    this.peopleUpBtn.addEventListener('click', () => this.adjustPeople(1));
+    this.peopleDownBtn.addEventListener('click', () => this.adjustPeople(-1));
+    this.resetBtn.addEventListener('click', () => this.reset());
+
+    // Initial calculation
+    this.calculate();
+}
+\`\`\`
+
+**Explanation:**
+- \`addEventListener()\`: Listens for events (like clicks or typing)
+- \`'input'\`: Event that fires when user types in an input field
+- \`'click'\`: Event that fires when user clicks a button
+- \`() => this.calculate()\`: Arrow function that calls the calculate method
+- \`forEach()\`: Loops through all tip buttons to add click listeners
+- \`this.calculate()\`: Runs initial calculation when app starts
+
+### Tip Button Selection
+\`\`\`javascript
+handleTipSelection(e) {
+    const tipPercent = parseFloat(e.target.dataset.tip);
+    
+    // Remove active class from all buttons
+    this.tipButtons.forEach(btn => btn.classList.remove('active'));
+    
+    // Add active class to clicked button
+    e.target.classList.add('active');
+    
+    // Set selected tip and clear custom input
+    this.selectedTipPercent = tipPercent;
+    this.customTipPercent = null;
+    this.customTipInput.value = '';
+    
+    this.calculate();
+}
+\`\`\`
+
+**Explanation:**
+- \`e.target\`: The button that was clicked
+- \`parseFloat()\`: Converts text to a decimal number
+- \`e.target.dataset.tip\`: Gets the \`data-tip\` attribute value
+- \`classList.remove('active')\`: Removes the active styling from all buttons
+- \`classList.add('active')\`: Adds active styling to clicked button
+- \`this.customTipInput.value = ''\`: Clears the custom tip input
+- \`this.calculate()\`: Recalculates with new tip percentage
+
+### Custom Tip Handling
+\`\`\`javascript
+handleCustomTip() {
+    const customValue = parseFloat(this.customTipInput.value) || 0;
+    
+    // Remove active class from all tip buttons
+    this.tipButtons.forEach(btn => btn.classList.remove('active'));
+    
+    // Set custom tip and clear selected tip
+    this.customTipPercent = customValue;
+    this.selectedTipPercent = null;
+    
+    this.calculate();
+}
+\`\`\`
+
+**Explanation:**
+- \`|| 0\`: If parseFloat returns NaN (not a number), use 0 instead
+- When user types in custom field, we clear the selected tip button
+- \`this.selectedTipPercent = null\`: Clears the button selection
+
+### People Counter Adjustment
+\`\`\`javascript
+adjustPeople(delta) {
+    const currentPeople = parseInt(this.peopleInput.value) || 1;
+    const newPeople = Math.max(1, currentPeople + delta);
+    this.peopleInput.value = newPeople;
+    this.calculate();
+}
+\`\`\`
+
+**Explanation:**
+- \`parseInt()\`: Converts text to a whole number
+- \`delta\`: The change amount (+1 or -1)
+- \`Math.max(1, ...)\`: Ensures the result is never less than 1
+- \`currentPeople + delta\`: Adds or subtracts 1 from current value
+
+### Main Calculation Function
+\`\`\`javascript
+calculate() {
+    const bill = parseFloat(this.billInput.value) || 0;
+    const people = parseInt(this.peopleInput.value) || 1;
+    
+    let tipPercent = 0;
+    if (this.selectedTipPercent !== null) {
+        tipPercent = this.selectedTipPercent;
+    } else if (this.customTipPercent !== null) {
+        tipPercent = this.customTipPercent;
+    }
+
+    // Calculate tip and total
+    const tipTotal = (bill * tipPercent) / 100;
+    const tipPerPerson = tipTotal / people;
+    const totalPerPerson = (bill + tipTotal) / people;
+
+    // Update display
+    this.tipAmountDisplay.textContent = \`$\${tipPerPerson.toFixed(2)}\`;
+    this.totalAmountDisplay.textContent = \`$\${totalPerPerson.toFixed(2)}\`;
+
+    // Enable/disable reset button
+    const hasValues = bill > 0 || tipPercent > 0 || people > 1;
+    this.resetBtn.disabled = !hasValues;
+}
+\`\`\`
+
+**Explanation:**
+- Gets current values from all inputs
+- Determines which tip percentage to use (button or custom)
+- \`(bill * tipPercent) / 100\`: Calculates total tip amount
+- \`tipTotal / people\`: Divides tip among all people
+- \`(bill + tipTotal) / people\`: Calculates total per person including tip
+- \`toFixed(2)\`: Rounds to 2 decimal places (cents)
+- \`textContent\`: Updates the displayed text
+- \`this.resetBtn.disabled\`: Enables/disables reset button based on whether there are values
+
+### Reset Function
+\`\`\`javascript
+reset() {
+    // Clear all inputs
+    this.billInput.value = '';
+    this.customTipInput.value = '';
+    this.peopleInput.value = '1';
+
+    // Clear selections
+    this.selectedTipPercent = null;
+    this.customTipPercent = null;
+
+    // Remove active states
+    this.tipButtons.forEach(btn => btn.classList.remove('active'));
+
+    // Reset displays
+    this.tipAmountDisplay.textContent = '$0.00';
+    this.totalAmountDisplay.textContent = '$0.00';
+
+    // Disable reset button
+    this.resetBtn.disabled = true;
+
+    // Focus on bill input
+    this.billInput.focus();
+}
+\`\`\`
+
+**Explanation:**
+- Clears all input fields
+- Resets all state variables to their initial values
+- Removes active styling from all buttons
+- Sets displays back to $0.00
+- Disables the reset button
+- \`focus()\`: Puts cursor in the bill input field
+
+### App Initialization
+\`\`\`javascript
+// Initialize the calculator when the page loads
+document.addEventListener('DOMContentLoaded', () => {
+    new TipCalculator();
+});
+\`\`\`
+
+**Explanation:**
+- \`DOMContentLoaded\`: Event that fires when HTML is fully loaded
+- \`new TipCalculator()\`: Creates a new instance of our calculator class
+- This ensures the JavaScript runs only after the HTML is ready
+
+### Input Validation
+\`\`\`javascript
+document.addEventListener('DOMContentLoaded', () => {
+    // Add number input restrictions
+    const numberInputs = document.querySelectorAll('input[type="number"]');
+    
+    numberInputs.forEach(input => {
+        input.addEventListener('keydown', (e) => {
+            // Allow: backspace, delete, tab, escape, enter
+            if ([46, 8, 9, 27, 13].indexOf(e.keyCode) !== -1 ||
+                // Allow: Ctrl+A, Ctrl+C, Ctrl+V, Ctrl+X
+                (e.keyCode === 65 && e.ctrlKey === true) ||
+                (e.keyCode === 67 && e.ctrlKey === true) ||
+                (e.keyCode === 86 && e.ctrlKey === true) ||
+                (e.keyCode === 88 && e.ctrlKey === true) ||
+                // Allow: home, end, left, right, down, up
+                (e.keyCode >= 35 && e.keyCode &lt;= 40)) {
+                return;
+            }
+            // Ensure that it is a number and stop the keypress
+            if ((e.shiftKey || (e.keyCode &lt; 48 || e.keyCode > 57)) && (e.keyCode &lt; 96 || e.keyCode > 105)) {
+                e.preventDefault();
+            }
+        });
+    });
+});
+\`\`\`
+
+**Explanation:**
+- Gets all number input fields
+- \`keydown\`: Event that fires when user presses a key
+- \`e.keyCode\`: Numeric code for the pressed key
+- Allows navigation keys (arrows, home, end, etc.)
+- Allows keyboard shortcuts (Ctrl+A, Ctrl+C, etc.)
+- \`e.preventDefault()\`: Stops the key from being typed if it's not a number
+- This prevents users from typing letters in number fields
+
+---
+
+## Key Programming Concepts Explained
+
+### 1. **DOM Manipulation**
+- **What it is**: Changing HTML elements using JavaScript
+- **How we use it**: Getting elements by ID, changing their content, adding/removing CSS classes
+
+### 2. **Event Handling**
+- **What it is**: Responding to user actions (clicks, typing, etc.)
+- **How we use it**: Adding event listeners to buttons and input fields
+
+### 3. **State Management**
+- **What it is**: Keeping track of the app's current condition
+- **How we use it**: Variables that store selected tip percentage, bill amount, etc.
+
+### 4. **Responsive Design**
+- **What it is**: Making the app work on different screen sizes
+- **How we use it**: CSS media queries that change layout on mobile devices
+
+### 5. **Input Validation**
+- **What it is**: Making sure users enter valid data
+- **How we use it**: Preventing non-numeric characters in number fields
+
+### 6. **Class-Based Architecture**
+- **What it is**: Organizing code into reusable, logical groups
+- **How we use it**: TipCalculator class that contains all related functions
+
+This documentation should help any beginner understand exactly how the tip calculator works, from the HTML structure to the JavaScript logic!
+\`\`\`
+
+I've created comprehensive documentation that explains every single line of code in the tip calculator app! Here's what I've included:
+
+## 📚 Documentation Features:
+
+### **README.md**
+- **Project overview** with features and screenshots
+- **Installation instructions** for beginners
+- **Usage guide** with step-by-step instructions
+- **Technical details** and browser compatibility
+- **File structure** explanation
+
+### **DOCUMENTATION.md**
+- **Complete line-by-line code explanation**
+- **Beginner-friendly language** with no assumed knowledge
+- **Visual code examples** with detailed breakdowns
+- **Key programming concepts** explained in simple terms
+- **Three main sections**: HTML, CSS, and JavaScript
+
+## 🎯 Perfect for Beginners:
+
+### **HTML Section Explains:**
+- Document structure and meta tags
+- Semantic markup and accessibility
+- Form elements and attributes
+- ID and class naming conventions
+
+### **CSS Section Explains:**
+- CSS reset and box-sizing
+- Flexbox and Grid layouts
+- Color schemes and typography
+- Responsive design with media queries
+- Hover states and transitions
+
+### **JavaScript Section Explains:**
+- Class-based architecture
+- DOM manipulation methods
+- Event handling and listeners
+- State management concepts
+- Input validation techniques
+- Mathematical calculations
+
+## 🔍 Key Learning Points Covered:
+
+1. **HTML5 semantic elements** and proper form structure
+2. **CSS Grid and Flexbox** for responsive layouts
+3. **JavaScript ES6+ features** like classes and arrow functions
+4. **Event-driven programming** with user interactions
+5. **Real-time calculations** and DOM updates
+6. **Input validation** and error prevention
+7. **Responsive design principles** for mobile-first development
+
+The documentation is written in a way that even someone completely new to web development can follow along and understand how each piece works together to create the final application!

@@ -199,7 +199,7 @@ body {
     background-color: rgba(38, 192, 171, 0.1);
 }
 
-/* Tip Buttons */
+/* Tip Buttons - Updated for Equal Width */
 .tip-buttons {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -215,8 +215,8 @@ body {
     cursor: pointer;
     transition: all 0.2s ease;
     border: 2px solid transparent;
-    width: 100%; /* Ensure full width */
-    min-width: 0; /* Allow shrinking */
+    width: 100%;
+    min-width: 0;
 }
 
 .tip-btn {
@@ -380,7 +380,7 @@ body {
     }
     
     .tip-buttons {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(3, 1fr);
         gap: var(--spacing-sm);
     }
     
@@ -399,7 +399,7 @@ body {
 /* Medium Mobile (481px - 768px) */
 @media (min-width: 481px) and (max-width: 768px) {
     .tip-buttons {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
     
     .calculator-grid {
