@@ -60,15 +60,6 @@ tip-calculator/
 - **Vanilla JavaScript**: ES6+ features with class-based architecture
 - **No Dependencies**: Pure web technologies, no external libraries required
 
-## 📱 Browser Compatibility
-
-- Chrome 60+
-- Firefox 55+
-- Safari 12+
-- Edge 79+
-- Mobile browsers (iOS Safari, Chrome Mobile)
-
-## 🤝 Contributing
 
 This is a learning project perfect for beginners. Feel free to:
 - Add new features
