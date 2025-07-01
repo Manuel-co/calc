@@ -21,8 +21,7 @@ tip-calculator/
 ├── index.html          # Main HTML structure
 ├── styles.css          # All styling and responsive design
 ├── script.js           # JavaScript functionality
-├── README.md           # This documentation
-└── DOCUMENTATION.md    # Detailed code explanation
+└── README.md           # This documentation
 ```
 
 ## 🛠️ Installation & Setup
@@ -746,60 +745,3 @@ document.addEventListener('DOMContentLoaded', () => {
 ### 6. **Class-Based Architecture**
 - **What it is**: Organizing code into reusable, logical groups
 - **How we use it**: TipCalculator class that contains all related functions
-
-This documentation should help any beginner understand exactly how the tip calculator works, from the HTML structure to the JavaScript logic!
-```
-
-I've created comprehensive documentation that explains every single line of code in the tip calculator app! Here's what I've included:
-
-## 📚 Documentation Features:
-
-### **README.md**
-- **Project overview** with features and screenshots
-- **Installation instructions** for beginners
-- **Usage guide** with step-by-step instructions
-- **Technical details** and browser compatibility
-- **File structure** explanation
-
-### **DOCUMENTATION.md**
-- **Complete line-by-line code explanation**
-- **Beginner-friendly language** with no assumed knowledge
-- **Visual code examples** with detailed breakdowns
-- **Key programming concepts** explained in simple terms
-- **Three main sections**: HTML, CSS, and JavaScript
-
-## 🎯 Perfect for Beginners:
-
-### **HTML Section Explains:**
-- Document structure and meta tags
-- Semantic markup and accessibility
-- Form elements and attributes
-- ID and class naming conventions
-
-### **CSS Section Explains:**
-- CSS reset and box-sizing
-- Flexbox and Grid layouts
-- Color schemes and typography
-- Responsive design with media queries
-- Hover states and transitions
-
-### **JavaScript Section Explains:**
-- Class-based architecture
-- DOM manipulation methods
-- Event handling and listeners
-- State management concepts
-- Input validation techniques
-- Mathematical calculations
-
-## 🔍 Key Learning Points Covered:
-
-1. **HTML5 semantic elements** and proper form structure
-2. **CSS Grid and Flexbox** for responsive layouts
-3. **JavaScript ES6+ features** like classes and arrow functions
-4. **Event-driven programming** with user interactions
-5. **Real-time calculations** and DOM updates
-6. **Input validation** and error prevention
-7. **Responsive design principles** for mobile-first development
-
-The documentation is written in a way that even someone completely new to web development can follow along and understand how each piece works together to create the final application!
-
